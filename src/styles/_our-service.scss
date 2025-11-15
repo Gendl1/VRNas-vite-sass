@@ -1,0 +1,83 @@
+@use 'variables' as *;
+@use 'mixins' as mixins;
+
+.our-service {
+
+    &__caption {
+        margin-top: 100px;
+        @include mixins.caption-1-text;
+        text-transform: uppercase;
+        @include mixins.gradient-text;
+    }
+
+    &__title {
+        margin-top: 12px;
+        @include mixins.h5-text;
+        color: $white-color;
+    }
+
+    &__text {
+        margin-top: 12px;
+        @include mixins.body-1-text;
+        color: $grey-2-color;
+    }
+
+    &__grid {
+        margin-top: 24px;
+        display: grid;
+        grid-template-areas: 
+        "development"
+        "design"
+        "consulting"
+        "games"
+        "events"
+        "entertainment";
+        gap: 32px;
+    }
+
+    &__grid-item {
+        padding: 38px 58px 25px 32px;
+        background-color: $black-50-op60-color;
+        
+    }
+
+    &__grid-item-img {
+        margin-bottom: 60px;
+    }
+
+    &__grid-item-title {
+        margin-top: 60px;
+        @include mixins.h7-text;
+        color: $white-color;
+    }
+
+    &__grid-item-text {
+        margin-top: 12px;
+        @include mixins.body-2-text;
+        color: $grey-1-color;
+    }
+}
+
+.grid-item-development {
+    grid-area: development;
+}
+
+.grid-item-design {
+    grid-area: design;
+}
+
+.grid-item-consulting {
+    grid-area: consulting;
+}
+
+.grid-item-games {
+    grid-area: games;
+}
+
+.grid-item-events {
+    grid-area: events;
+}
+
+.grid-item-entertainment {
+    grid-area: entertainment;
+}

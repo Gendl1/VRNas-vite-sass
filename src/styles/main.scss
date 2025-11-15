@@ -1,0 +1,20 @@
+@use 'reset';
+@use 'variables' as *;
+@use 'header';
+@use 'hero';
+@use 'about-us';
+@use 'our-service';
+@use 'why-choose-us';
+
+body {
+    background-color: $black-100-color;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+

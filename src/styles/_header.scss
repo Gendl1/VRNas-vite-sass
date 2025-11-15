@@ -1,0 +1,13 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 42px;
+
+    &__effect {
+        opacity: 30%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

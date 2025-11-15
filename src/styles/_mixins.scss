@@ -1,0 +1,128 @@
+@use 'variables' as *;
+
+@mixin h1-text {
+    font-family: $heading-1-font;
+    font-size: $heading-1-size;
+    line-height: $heading-1-lh;
+}
+
+@mixin h2-text {
+    font-family: $heading-2-font;
+    font-size: $heading-2-size;
+    line-height: $heading-2-lh;
+}
+
+@mixin h3-text {
+    font-family: $heading-3-font;
+    font-size: $heading-3-size;
+    line-height: $heading-3-lh;
+}
+
+@mixin h4-text {
+    font-family: $heading-4-font;
+    font-size: $heading-4-size;
+    line-height: $heading-4-lh;
+}
+
+@mixin h5-text {
+    font-family: $heading-5-font;
+    font-size: $heading-5-size;
+    line-height: $heading-5-lh;
+}
+
+@mixin h6-text {
+    font-family: $heading-6-font;
+    font-size: $heading-6-size;
+    line-height: $heading-6-lh;
+}
+
+@mixin h7-text {
+    font-family: $heading-7-font;
+    font-size: $heading-7-size;
+    line-height: $heading-7-lh;
+}
+
+@mixin h8-text {
+    font-family: $heading-8-font;
+    font-size: $heading-8-size;
+    line-height: $heading-8-lh;
+}
+
+@mixin h9-text {
+    font-family: $heading-9-font;
+    font-size: $heading-9-size;
+    line-height: $heading-9-lh;
+}
+
+@mixin h10-text {
+    font-family: $heading-10-font;
+    font-size: $heading-10-size;
+    line-height: $heading-10-lh;   
+}
+
+@mixin h11-text {
+    font-family: $heading-11-font;
+    font-size: $heading-11-size;
+    line-height: $heading-11-lh;   
+}
+
+@mixin h12-text {
+    font-family: $heading-12-font;
+    font-size: $heading-12-size;
+    line-height: $heading-12-lh;
+}
+
+@mixin body-1-text {
+    font-family: $body-1-font;
+    font-size: $body-1-size;
+    line-height: $body-1-lh;
+}
+
+@mixin body-2-text {
+    font-family: $body-2-font;
+    font-size: $body-2-size;
+    line-height: $body-2-lh;
+}
+
+@mixin body-3-text {
+    font-family: $body-3-font;
+    font-size: $body-3-size;
+    line-height: $body-3-lh;
+}
+
+@mixin body-4-text {
+    font-family: $body-4-font;
+    font-size: $body-4-size;
+    line-height: $body-4-lh;
+}
+
+@mixin caption-1-text {
+    font-family: $caption-1-font;
+    font-size: $caption-1-size;
+    line-height: $caption-1-lh;
+}
+
+@mixin caption-2-text {
+    font-family: $caption-2-font;
+    font-size: $caption-2-size;
+    line-height: $caption-2-lh;
+}
+
+@mixin button-1-text {
+    font-family: $button-1-font;
+    font-size: $button-1-size;
+    line-height: $button-1-lh;
+}
+
+@mixin button-2-text {
+    font-family: $button-2-font;
+    font-size: $button-2-size;
+    line-height: $button-2-lh;
+}
+
+@mixin gradient-text {
+    background: $linear-color;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}

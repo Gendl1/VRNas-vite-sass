@@ -1,0 +1,136 @@
+@font-face {
+    font-display: swap; 
+    font-family: 'Chakra Petch light';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../assets/chakra-petch-v13-latin-300.woff2') format('woff2'); 
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Chakra Petch regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/chakra-petch-v13-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Chakra Petch medium';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../assets/chakra-petch-v13-latin-500.woff2') format('woff2'); 
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Chakra Petch semi-bold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../assets/chakra-petch-v13-latin-600.woff2') format('woff2'); 
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Chakra Petch bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/chakra-petch-v13-latin-700.woff2') format('woff2');
+}
+
+$heading-1-font: 'Chakra Petch semi-bold';
+$heading-1-size: 64px;
+$heading-1-lh: auto;
+
+$heading-2-font: 'Chakra Petch semi-bold';
+$heading-2-size: 48px;
+$heading-2-lh: 58px;
+
+$heading-3-font: 'Chakra Petch semi-bold';
+$heading-3-size: 40px;
+$heading-3-lh: 58px;
+
+$heading-4-font: 'Chakra Petch medium';
+$heading-4-size: 36px;
+$heading-4-lh: 44px;
+
+$heading-5-font: 'Chakra Petch semi-bold';
+$heading-5-size: 32px;
+$heading-5-lh: auto;
+
+$heading-6-font: 'Chakra Petch semi-bold';
+$heading-6-size: 28px;
+$heading-6-lh: auto;
+
+$heading-7-font: 'Chakra Petch regular';
+$heading-7-size: 20px;
+$heading-7-lh: auto;
+
+$heading-8-font: 'Chakra Petch medium';
+$heading-8-size: 20px;
+$heading-8-lh: auto;
+
+$heading-9-font: 'Chakra Petch regular';
+$heading-9-size: 18px;
+$heading-9-lh: auto;
+
+$heading-10-font: 'Chakra Petch semi-bold';
+$heading-10-size: 16px;
+$heading-10-lh: 28px;
+
+$heading-11-font: 'Chakra Petch semi-bold';
+$heading-11-size: 16px;
+$heading-11-lh: auto;
+
+$heading-12-font: 'Chakra Petch regular';
+$heading-12-size: 14px;
+$heading-12-lh: auto;
+
+$body-1-font: 'Chakra Petch light';
+$body-1-size: 16px;
+$body-1-lh: 28px;
+
+$body-2-font: 'Chakra Petch regular';
+$body-2-size: 14px;
+$body-2-lh: 28px;
+
+$body-3-font: 'Chakra Petch regular';
+$body-3-size: 16px;
+$body-3-lh: 28px;
+
+$body-4-font: 'Chakra Petch regular';
+$body-4-size: 12px;
+$body-4-lh: 20px;
+
+$caption-1-font: 'Chakra Petch medium';
+$caption-1-size: 16px;
+$caption-1-lh: auto;
+
+$caption-2-font: 'Chakra Petch medium';
+$caption-2-size: 14px;
+$caption-2-lh: 20px;
+
+$caption-2-font: 'Chakra Petch medium';
+$caption-2-size: 10px;
+$caption-2-lh: 14px;
+
+$button-1-font: 'Chakra Petch bold';
+$button-1-size: 14px;
+$button-1-lh: 14px;
+
+$button-2-font: 'Chakra Petch light';
+$button-2-size: 16px;
+$button-2-lh: 28px;
+
+$linear-color: linear-gradient(to right, #0CBAF1, #E95CE9);
+$purple-10-color: #CA6AEB;
+$blue-color: #19B5F1;
+$success-color:#00C566;
+$error-color:#FF4747;
+$warning-color:#FACC15;
+$black-100-color:#18181B;
+$black-50-color:#252532;
+$black-50-op60-color:#202029;
+$grey-1-color: #B0B0B2;
+$grey-2-color: #D1D1D1;
+$white-color:#FFFFFF;

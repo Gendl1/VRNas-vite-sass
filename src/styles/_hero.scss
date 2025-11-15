@@ -1,0 +1,116 @@
+@use 'variables' as *;
+
+.hero {
+    &__title {
+        font-family: $heading-2-font;
+        font-size: $heading-2-size;
+        line-height: $heading-2-lh;
+        color: $white-color;
+        margin-top: 80px;
+    }
+
+    &__subtitle {
+        font-family: $body-1-font;
+        font-size: $body-1-size;
+        line-height: $body-1-lh;
+        color: $grey-2-color;
+        margin-top: 12px;
+    }
+
+    &__button {
+        font-family: $button-1-font;
+        font-size: $button-1-size;
+        line-height: $button-1-lh;
+        color: $white-color;
+        text-transform: uppercase;
+        padding: 18px 38px;
+        background: $linear-color;
+        margin-top: 32px;
+    }
+
+    &__clients {
+        margin-top: 32px;
+        display: flex;
+        gap: 18px;
+    }
+
+    &__clients-count {
+        position: relative;
+    }
+
+    &__clients-text {
+        font-family: $body-1-font;
+        font-size: $body-1-size;
+        line-height: $body-1-lh;
+        color: $grey-2-color;
+
+        &--fat {
+        font-family: $heading-10-font;
+        color: $white-color;
+        }
+    }
+
+    &__clients-underline {
+        position: absolute;
+        top: 19px;
+        left: -6px;
+    }
+
+    &__display {
+        min-height: 422px;
+        position: relative;
+        display: flex;
+    }
+
+    &__display-video {
+        position: absolute;
+        top:145px;
+    }
+
+    &__display-photo {
+        position: absolute;
+        right: -16px;
+    }
+
+    &__grid {
+        background-color: $black-50-color;
+        padding: 36px;
+        display: grid;
+        grid-template-areas: 
+        "Expertise"
+        "Customization"
+        "Service";
+        gap: 50px;
+    }
+
+    &__item-img {
+        margin-bottom: 42px;
+    }
+
+    &__item-title {
+        font-family: $heading-7-font;
+        font-size: $heading-7-size;
+        line-height: $heading-7-lh;
+        color: $white-color;
+    }
+
+    &__item-text {
+        margin-top: 12px;
+        font-family: $body-2-font;
+        font-size: $body-2-size;
+        line-height: $body-2-lh;
+        color: $grey-1-color;
+    }
+}
+
+.grid-item-expertise {
+    grid-area: Expertise;
+}
+
+.grid-item-customization {
+    grid-area: Customization;
+}
+
+.grid-item-service {
+    grid-area: Service;
+}
