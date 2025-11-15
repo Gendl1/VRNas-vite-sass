@@ -6,15 +6,58 @@
     &__img {
         position: relative;
         margin-top: 100px;
+        max-height: 475px;
+    }
+
+    &__img-man {
+        max-height: 475px;
     }
 
     &__img-video {
         position: absolute;
-        bottom: 75px;
+        bottom: 0;
         right: 50px;
     }
 
     &__text {
         margin-top: 48px;
+    }
+
+    &__text-caption {
+        @include mixins.caption-1-text;
+        @include mixins.gradient-text;
+        text-transform: uppercase;
+    }
+
+    &__text-title {
+        margin-top: 12px;
+        @include mixins.h5-text;
+        color: $white-color;
+    }
+
+    &__expandable {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        margin-top:32px;
+    }
+
+    &__expandable-item-title {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 12px;
+        border-bottom: 1px solid $white-color;
+
+    }
+
+    &__expandable-item-title-text {
+        @include mixins.h8-text;
+        color: $white-color;
+    }
+
+    &__expandable-item-text {
+        @include mixins.body-3-text;
+        color: $grey-2-color;
+        margin-top: 12px;
     }
 }
