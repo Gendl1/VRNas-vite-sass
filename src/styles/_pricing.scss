@@ -1,0 +1,104 @@
+@use 'variables' as *;
+@use 'mixins' as mixins;
+
+.pricing {
+    &__caption {
+        margin-top: 100px;
+        @include mixins.caption-1-text;
+        @include mixins.gradient-text;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-top: 12px;
+        @include mixins.h5-text;
+        color: $white-color;
+    }
+
+    &__text {
+        margin-top: 16px;
+        @include mixins.body-1-text;
+        color: $grey-2-color;
+    }
+
+    &__display {
+        margin-top: 47px;
+        padding: 32px 22px 0 22px;
+        background-color: $black-50-op81-color;
+    }
+
+    &__display-grid {
+        border-bottom: 1px solid $white-op10-color;
+        padding-bottom: 48px;
+        display: grid;
+        gap: 32px;
+    }
+
+    &__display-grid-item {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__display-grid-item-img {
+        width: 42px;
+        height: 42px;
+    }
+
+    &__display-grid-item-text-title {
+        @include mixins.h9-text;
+        color: $white-color;
+    }
+
+    &__display-grid-item-text-value {
+        margin-top: 12px;
+        @include mixins.body-3-text;
+        color: $grey-1-color;
+    }
+
+    &__display-void {
+        position: relative;
+        min-height: 407px;
+        padding: none;
+    }
+
+    &__banner {
+        max-width: 321px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 70px 18px 70px;
+        background-color: $black-50-color;
+        border: 1px solid;
+        border-image: $linear-border-color;
+        position: absolute;
+        left: -6px;
+        bottom: -88px;
+    }
+
+    &__banner-caption {
+        @include mixins.caption-2-text;
+        color: $grey-2-color;
+    }
+
+    &__banner-price {
+        @include mixins.price-1-text;
+        color: $white-color;
+    }
+
+    &__banner-link {
+        text-decoration: none;
+        margin-top: 14px;
+    }
+
+    &__banner-info {
+        margin-top: 14px;
+        @include mixins.body-4-text;
+        color: $grey-1-color;
+    }
+
+}
+
+img.special-img {
+    max-width: none;
+}

@@ -126,3 +126,9 @@
     color: transparent;
     display: inline-block;
 }
+
+@mixin price-1-text {
+    font-family: $price-1-font;
+    font-size: $price-1-size;
+    line-height: $price-1-lh;
+}

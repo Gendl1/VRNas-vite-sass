@@ -122,7 +122,12 @@ $button-2-font: 'Chakra Petch light';
 $button-2-size: 16px;
 $button-2-lh: 28px;
 
+$price-1-font: 'Chakra Petch semi-bold';
+$price-1-size: 60px;
+$price-1-lh: 68px;
+
 $linear-color: linear-gradient(to right, #0CBAF1, #E95CE9);
+$linear-border-color: linear-gradient(to right, #0CBAF1, #E95CE9) 1;
 $purple-10-color: #CA6AEB;
 $blue-color: #19B5F1;
 $success-color:#00C566;
@@ -131,6 +136,8 @@ $warning-color:#FACC15;
 $black-100-color:#18181B;
 $black-50-color:#252532;
 $black-50-op60-color:#202029;
+$black-50-op81-color :#23232e;
 $grey-1-color: #B0B0B2;
 $grey-2-color: #D1D1D1;
 $white-color:#FFFFFF;
+$white-op10-color: #3b3a45;

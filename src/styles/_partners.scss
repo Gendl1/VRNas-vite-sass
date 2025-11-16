@@ -1,0 +1,25 @@
+@use 'variables' as *;
+@use 'mixins' as mixins;
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__caption {
+        margin-top: 188px;
+        @include mixins.caption-1-text;
+        @include mixins.gradient-text;
+    }
+
+    &__title {
+        margin-top: 12px;
+        @include mixins.h5-text;
+        color: $white-color;
+        text-align: center;
+    }
+
+    &__img {
+        margin-top: 24px;
+    }
+}

@@ -7,13 +7,15 @@
 @use 'why-choose-us';
 @use 'get-started';
 @use 'testimonial';
+@use 'pricing';
+@use 'partners';
 
 body {
     background-color: $black-100-color;
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
