@@ -23,6 +23,29 @@
     }
 
     &__img {
-        margin-top: 29px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__img-bg {
+        width: 430px;
+        height: 1007px;
+        object-fit: cover;
+        z-index: 1;
+    }   
+
+    &__img-man {
+        position: absolute;
+        top: 262px;
+        right: -40px;
+        z-index: 3;
+    }
+
+    &__img-light {
+        overflow: hidden;
+        position: absolute;
+        top: 186px;
+        left: -251px;
+        z-index: 2;
     }
 }

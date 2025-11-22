@@ -8,33 +8,36 @@
   <body>
     
     <header class="header container">
-      <div class="header__logo">
+      <a class="header__logo" href="#">
         <img src="./public/images/logo.png">
-      </div>
+      </a>
 
-      <div class="header__burger">
+      <button class="header__burger">
         <img src="./public/images/header_burger.png">
-      </div>
+      </button>
 
       <div class="header__effect">
         <img src="./public/images/header_effect.png">
       </div>
     </header>
 
-    <section class="hero container">
-      <h2 class="hero__title">
+    <section class="hero">
+      <h1 class="hero__title special-container">
         Immerse Yourself in Virtual Reality
-      </h2>
+      </h1>
 
-      <p class="hero__subtitle">
+      <p class="hero__subtitle special-container">
         Experience Unforgettable Events in VR. Bring your events to life like never before with our VR services
       </p>
 
-      <button class="hero__button">
-        discover more
-      </button>
+      <div class="container">
+        <a class="hero__button">
+          discover more
+        </a>
+      </div>
+      
 
-      <div class="hero__clients">
+      <div class="hero__clients special-container">
         <div class="hero__clients-img">
           <img src="./public/images/hero_clients.png">
         </div>
@@ -54,39 +57,51 @@
         <div class="hero__display-video">
           <img src="./public/images/hero_video.png">
         </div>
+        <div class="hero__light">
+          <img src="./public/images/light.svg" class="special-img">
+        </div>
         <div class="hero__display-photo">
           <img src="./public/images/hero_man.png">
         </div>
       </div>
 
-      <div class="hero__grid">
-        <div class="hero__grid-item grid-item-expertise">
-          <div class="hero__item-img">
-            <img src="./public/images/hero_item1.svg">
-          </div>
-          <h7 class="hero__item-title">Expertise</h7>
-          <p class="hero__item-text">Our team consists of experienced VR developers, designers, and technicians who have a passion for VR and a commitment to delivering quality work and give the best service</p>
-        </div>
+      
 
-        <div class="hero__grid-item grid-item-customization">
-          <div class="hero__item-img">
-            <img src="./public/images/hero_item2.svg">
-          </div>
-          <h7 class="hero__item-title">Customization</h7>
-          <p class="hero__item-text">Every client is unique, and we believe every VR experience should be too. We'll work with you to create a customized solution that meets your specific needs and goals</p>
-        </div>
+      <div class="hero__background">
+        <img src="./public/images/background_vector.svg">
+      </div>
 
-        <div class="hero__grid-item grid-item-service">
-          <div class="hero__item-img">
-            <img src="./public/images/hero_item3.svg">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__grid-item grid-item-expertise">
+            <div class="hero__item-img">
+              <img src="./public/images/hero_item1.svg">
+            </div>
+            <h4 class="hero__item-title">Expertise</h4>
+            <p class="hero__item-text">Our team consists of experienced VR developers, designers, and technicians who have a passion for VR and a commitment to delivering quality work and give the best service</p>
           </div>
-          <h7 class="hero__item-title">Service</h7>
-          <p class="hero__item-text">We believe in providing exceptional customer service, from initial consultation to final delivery. Our goal is to ensure you're satisfied with every aspect of your VR experience.</p>
+
+          <div class="hero__grid-item grid-item-customization">
+            <div class="hero__item-img">
+              <img src="./public/images/hero_item2.svg">
+            </div>
+            <h4 class="hero__item-title">Customization</h4>
+            <p class="hero__item-text">Every client is unique, and we believe every VR experience should be too. We'll work with you to create a customized solution that meets your specific needs and goals</p>
+          </div>
+
+          <div class="hero__grid-item grid-item-service">
+            <div class="hero__item-img">
+              <img src="./public/images/hero_item3.svg">
+            </div>
+            <h4 class="hero__item-title">Service</h4>
+            <p class="hero__item-text">We believe in providing exceptional customer service, from initial consultation to final delivery. Our goal is to ensure you're satisfied with every aspect of your VR experience.</p>
+          </div>
         </div>
       </div>
+      
     </section>
 
-    <section class="about-us container">
+    <section class="about-us">
       <div class="about-us__img">
         <div class="about-us__img-man">
           <img src="./public/images/about-us_man.png">
@@ -94,13 +109,16 @@
         <div class="about-us__img-video">
           <img src="./public/images/about-us_video.png">
         </div>
+        <div class="about-us__img-light">
+          <img src="./public/images/light2.svg" class="special-img">
+        </div>
       </div>
 
-      <span class="about-us__caption">about us</span>
-      <h5 class="about-us__title">Bring your events to life like never before with our VR services.</h5>
-      <p class="about-us__text">VRNas is a leading provider of VR services for education, entertainment, architecture, and events. Our mission is to bring the power of virtual reality to everyone, allowing them to explore new worlds, learn in new ways, and experience events in a whole new light.</p>
+      <span class="about-us__caption special-container">about us</span>
+      <h3 class="about-us__title special-container">Bring your events to life like never before with our VR services.</h3>
+      <p class="about-us__text special-container">VRNas is a leading provider of VR services for education, entertainment, architecture, and events. Our mission is to bring the power of virtual reality to everyone, allowing them to explore new worlds, learn in new ways, and experience events in a whole new light.</p>
 
-      <ul class="about-us__checklist">
+      <ul class="about-us__checklist special-container">
         <li class="about-us__checklist-item">
           <div class="about-us__checklist-item-img">
             <img src="./public/images/checklist_img.svg">
@@ -124,15 +142,18 @@
 
       </ul>
 
-      <button class="about-us__button hero__button">
-        read more
-      </button>
+      <div class="container">
+        <a class="about-us__button hero__button">
+          read more
+        </a>
+      </div>
+      
 
     </section>
 
     <section class="our-service container">
       <span class="our-service__caption">our service</span>
-      <h5 class="our-service__title">Our Service</h5>
+      <h3 class="our-service__title">Our Service</h3>
       <p class="our-service__text">We use the latest VR hardware and software to create high-quality VR experiences that are accessible and affordable. Our goal is to provide exceptional customer service and support, and our team is always available to answer any questions and address any concerns you may have.</p>
 
       <div class="our-service__grid">
@@ -142,9 +163,9 @@
             <img src="./public/images/os_1.svg">
           </div>
 
-          <h7 class="our-service__grid-item-title">
+          <h4 class="our-service__grid-item-title">
             VR Development
-          </h7>
+          </h4>
 
           <p class="our-service__grid-item-text">
             From concept to creation, our team of VR developers will bring your vision to life.
@@ -156,9 +177,9 @@
             <img src="./public/images/os_2.svg">
           </div>
 
-          <h7 class="our-service__grid-item-title">
+          <h4 class="our-service__grid-item-title">
             VR Design
-          </h7>
+          </h4>
 
           <p class="our-service__grid-item-text">
             Our talented VR designers will create immersive and engaging environments that will captivate your audience.
@@ -170,9 +191,9 @@
             <img src="./public/images/os_3.svg">
           </div>
 
-          <h7 class="our-service__grid-item-title">
+          <h4 class="our-service__grid-item-title">
             VR Consulting
-          </h7>
+          </h4>
 
           <p class="our-service__grid-item-text">
             Our VR consultants will work with you to ensure that your VR experience meets your goals and exceeds your expectations.
@@ -184,9 +205,9 @@
             <img src="./public/images/os_4.svg">
           </div>
 
-          <h7 class="our-service__grid-item-title">
+          <h4 class="our-service__grid-item-title">
             VR Games
-          </h7>
+          </h4>
 
           <p class="our-service__grid-item-text">
             We offer a wide selection of VR games that are suitable for players of all ages and skill levels.
@@ -198,9 +219,9 @@
             <img src="./public/images/os_5.svg">
           </div>
 
-          <h7 class="our-service__grid-item-title">
+          <h4 class="our-service__grid-item-title">
             VR Events
-          </h7>
+          </h4>
 
           <p class="our-service__grid-item-text">
             Make your next event unforgettable with our VR event services.
@@ -212,9 +233,9 @@
             <img src="./public/images/os_6.svg">
           </div>
 
-          <h7 class="our-service__grid-item-title">
+          <h4 class="our-service__grid-item-title">
             VR Entertainment
-          </h7>
+          </h4>
 
           <p class="our-service__grid-item-text">
             reate a VR escape room, or offer VR experiences at a theme park, we have the expertise and experience to make it happen.
@@ -224,7 +245,7 @@
       </div>
     </section>
 
-    <section class="choose-us container">
+    <section class="choose-us">
       <div class="choose-us__img">
         <div class="choose-us__img-man">
           <img src="./public/images/wcu-man.png">
@@ -233,65 +254,98 @@
         <div class="choose-us__img-video">
           <img src="./public/images/wcu-video.png">
         </div>
+
+        <div class="choose-us__img-light">
+          <img src="/public/images/light2.svg" class="special-img">
+        </div>
       </div>
 
-      <div class="choose-us__text">
-        <span class="choose-us__text-caption">why choose us</span>
-        <h5 class="choose-us__text-title">Why Choose Us for Your VR Needs</h5>
-      </div>
+      <div class="container">
+        <div class="choose-us__text">
+          <span class="choose-us__text-caption ">why choose us</span>
+          <h3 class="choose-us__text-title">Why Choose Us for Your VR Needs</h3>
+        </div>
 
-      <div class="choose-us__expandable">
+        <div class="choose-us__expandable">
 
-        <div class="choose-us__expandable-item">
-          <div class="choose-us__expandable-item-title">
-            <h8 class="choose-us__expandable-item-title-text">Passionate and Experienced Team</h8>
-            <div class="choose-us__expandable-item-title-img">
-              <img src="./public/images/expand_open.svg">
+          <div class="choose-us__expandable-item">
+            <div class="choose-us__expandable-item-title">
+              <h5 class="choose-us__expandable-item-title-text">Passionate and Experienced Team</h5>
+              <div class="choose-us__expandable-item-title-img">
+                <img src="./public/images/expand_open.svg">
+              </div>
+            </div>
+
+            <div class="choose-us__expandable-item-text">
+              We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences.
             </div>
           </div>
 
-          <div class="choose-us__expandable-item-text">
-            We are proud of our team of VR experts who are passionate about VR and dedicated to delivering the highest quality work. Our team consists of experienced VR developers, designers, and technicians who have a proven track record of creating immersive and engaging VR experiences.
-          </div>
-        </div>
-
-        <div class="choose-us__expandable-item">
-          <div class="choose-us__expandable-item-title">
-            <h8 class="choose-us__expandable-item-title-text">Customized Solutions</h8>
-            <div class="choose-us__expandable-item-title-img">
-              <img src="./public/images/expand_close.svg">
+          <div class="choose-us__expandable-item">
+            <div class="choose-us__expandable-item-title">
+              <h5 class="choose-us__expandable-item-title-text">Customized Solutions</h5>
+              <div class="choose-us__expandable-item-title-img">
+                <img src="./public/images/expand_close.svg">
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="choose-us__expandable-item">
-          <div class="choose-us__expandable-item-title">
-            <h8 class="choose-us__expandable-item-title-text">Exceptional Customer Service</h8>
-            <div class="choose-us__expandable-item-title-img">
-              <img src="./public/images/expand_close.svg">
+          <div class="choose-us__expandable-item">
+            <div class="choose-us__expandable-item-title">
+              <h5 class="choose-us__expandable-item-title-text">Exceptional Customer Service</h5>
+              <div class="choose-us__expandable-item-title-img">
+                <img src="./public/images/expand_close.svg">
+              </div>
             </div>
           </div>
         </div>
       </div>
+      
     </section>
 
     <section class="get-started container">
       <span class="get-started__caption">how to get started</span>
-      <h5 class="get-started__title">Bringing Your Virtual Reality Dreams to Life</h5>
+      <h3 class="get-started__title">Bringing Your Virtual Reality Dreams to Life</h3>
+
       <div class="get-started__video">
-        <img src="./public/images/get-started_video.png">
+        <div class="get-started__video-data">
+          <div class="get-started__video-data-title">VR Service</div>
+          <p class="get-started__video-data-desc">How to get started</p>
+        </div>
+        
+        <button class="get-started__video-play">
+          <img src="./public/images/video_play.svg">
+        </button>
+        <div class="get-started__video-bar">
+          <div class="get-started__video-bar-play">
+            <img src="./public/images/bar_play.svg">
+          </div>
+
+          <div class="get-started__video-bar-line">
+            <img src="./public/images/bar_line.svg">
+          </div>
+        </div>
       </div>
-      <button class="get-started__button hero__button">
+      <a class="get-started__button hero__button">
         get started
-      </button>
+      </a>
     </section>
 
     <section class="testimonial">
       <span class="testimonial__caption">testimonial</span>
-      <h5 class="testimonial__title">What Our Clients Are Saying</h5>
+      <h3 class="testimonial__title">What Our Clients Are Saying</h3>
       <div class="testimonial__img">
-        <img src="./public/images/testimonial.png">
+        <div>
+          <img src="./public/images/testimonial_bg.svg" class="testimonial__img-bg">
+        </div>
+        <div class="testimonial__img-man">
+          <img src="./public/images/testimonial_man.svg" class="special-img">
+        </div>
+        <div class="testimonial__img-light">
+          <img src="./public/images/light3.svg" class="special-img">
+        </div>
       </div>
+        
     </section>
 
     <section class="pricing container">
@@ -307,7 +361,12 @@
         At VRNas, we believe that everyone should have access to the benefits of VR. That's why we offer a range of pricing options to meet the needs of any budget.
       </p>
 
+      <div class="pricing__display-light">
+          <img src="./public/images/light4.svg" class="special-img">
+        </div>
+
       <div class="pricing__display">
+
         <div class="pricing__display-grid">
 
           <div class="pricing__display-grid-item">
@@ -333,11 +392,11 @@
 
             <div class="pricing__display-grid-item-text">
               <span class="pricing__display-grid-item-text-title">
-                Customizable Packages
+                Flexible Payment Options
               </span>
 
               <p class="pricing__display-grid-item-text-value">
-                We understand that each project is unique, so we offer customizable packages to ensure that you get the services you need at a price that works for you. Our team will work with you to create a package that meets your specific goals and budget.
+                We offer flexible payment options to make it easy for you to get started with our services. We accept various payment methods, including credit cards, bank transfers, and PayPal, and we can also work with you to create a payment plan that suits your needs.
               </p>
             </div>
           </div>
@@ -349,11 +408,11 @@
 
             <div class="pricing__display-grid-item-text">
               <span class="pricing__display-grid-item-text-title">
-                Customizable Packages
+                Satisfaction Guarantee
               </span>
 
               <p class="pricing__display-grid-item-text-value">
-                We understand that each project is unique, so we offer customizable packages to ensure that you get the services you need at a price that works for you. Our team will work with you to create a package that meets your specific goals and budget.
+                We stand behind our services and are committed to ensuring that you are completely satisfied with the final product. If for any reason you are not happy with our services, we will work with you to make it right or provide a full refund.
               </p>
             </div>
           </div>
@@ -361,6 +420,7 @@
         </div>
 
         <div class="pricing__display-void">
+          <div class="pricing__display-void-man"><img src="./public/images/pricing_man.svg"></div>
           <div class="pricing__banner">
             <span class="pricing__banner-caption">Start from</span>
             <span class="pricing__banner-price">$99</span>
@@ -380,8 +440,191 @@
     <section class="partners">
       <span class="partners__caption">Our Trusted Partners</span>
       <h3 class="partners__title">Discover the Companies We Work With</h3>
-      <div class="partners__img"><img src="./public/images/partners.png"></div>
+      <div class="partners__img">
+        <div class="partners__img-light"><img src="./public/images/light5.svg"></div>
+        <div class="partners__img-sircle"><img src="./public/images/partners_circle.svg"></div>
+        <div class="partners__img-bg"><img src="./public/images/partners_bg.svg"></div>
+        <div class="partners__img-man"><img src="./public/images/partners_man.png"></div>
+      </div>
+      
     </section>
+
+    <section class="our-articles container">
+      <span class="our-articles__caption">our articles</span>
+      <h3 class="our-articles__title">Stay Up-to-Date with Our VR Insights</h3>
+      <h4 class="our-articles__subtitle">Popular Article</h4>
+      <div class="our-articles__display">
+        <div class="our-articles__display-data">
+          <div class="our-articles__display-data-caption">VR Games</div>
+          <p class="our-articles__display-data-title">Entertainment Goes Virtual: The Rise of VR Gaming</p>
+        </div>
+        <button class="our-articles__display-button">
+            <img src="./public/images/articles_button.svg">
+        </button> 
+      </div>
+
+      <div class="our-articles__recent">
+        <h4 class="our-articles__recent-title">Recent Article</h4>
+        <div class="our-articles__recent-grid">
+
+          <div class="our-articles__recent-grid-item">
+            <div class="our-articles__recent-grid-item-img">
+              <img src="./public/images/articles_grid1.svg">
+            </div>
+            <div class="our-articles__recent-grid-item-text">
+              <div class="our-articles__recent-grid-item-text-caption">
+                VR Education
+              </div>
+
+              <div class="our-articles__recent-grid-item-text-value">
+                The Future of Education: How VR is Revolutionizing the Classroom
+              </div>
+            </div>
+          </div>
+
+          <div class="our-articles__recent-grid-item">
+            <div class="our-articles__recent-grid-item-img">
+              <img src="./public/images/articles_grid2.svg">
+            </div>
+            <div class="our-articles__recent-grid-item-text">
+              <div class="our-articles__recent-grid-item-text-caption">
+                VR Architecture
+              </div>
+
+              <div class="our-articles__recent-grid-item-text-value">
+                Bringing Designs to Life: How VR is Changing Architecture
+              </div>
+            </div>
+          </div> 
+
+          <div class="our-articles__recent-grid-item">
+            <div class="our-articles__recent-grid-item-img">
+              <img src="./public/images/articles_grid3.svg">
+            </div>
+            <div class="our-articles__recent-grid-item-text">
+              <div class="our-articles__recent-grid-item-text-caption">
+                VR Entertainment 
+              </div>
+
+              <div class="our-articles__recent-grid-item-text-value">
+                Making Events Memorable: The Power of VR for Corporate and Special Occasions
+              </div>
+            </div>
+          </div> 
+
+          <div class="our-articles__recent-grid-item">
+            <div class="our-articles__recent-grid-item-img">
+              <img src="./public/images/articles_grid3.svg">
+            </div>
+            <div class="our-articles__recent-grid-item-text">
+              <div class="our-articles__recent-grid-item-text-caption">
+                VR Event
+              </div>
+
+              <div class="our-articles__recent-grid-item-text-value">
+                Exploring New Worlds: The Benefits of VR Travel
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <a class="our-articles__link">
+        <span>see all</span>
+      </a>
+
+      <div class="our-articles__form">
+        <div class="our-articles__form-bg">
+          <img src="./public/images/articles_bg.svg" class="special-img">
+        </div>
+        <div class="our-articles__form-sub">
+          <span class="our-articles__form-sub-caption">Subscribe to our newsletter for latest updates</span>
+          <div class="our-articles__form-sub-input">
+            <div class="our-articles__form-sub-input-img">
+              <img src="./public/images/input_img.svg">
+            </div>
+            <input class="our-articles__form-sub-input-field" placeholder="Enter your email address" id="1">
+            <button class="our-articles__form-sub-input-button">
+              <img src="./public/images/input_button_img.svg">
+            </button>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="footer container">
+      <div class="footer__contacts">
+        <div class="footer__contacts-img">
+          <img src="./public/images/logo.png">
+        </div>
+        <div class="footer__contacts-media">
+          <div><img src="./public/images/twitter.svg"></div>
+          <div><img src="./public/images/facebook.svg"></div>
+          <div><img src="./public/images/instagram.svg"></div>
+          <div><img src="./public/images/github.svg"></div>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__links-quicklinks">
+          <a class="footer__links-quicklinks-value-head" href="#">Quicklinks</a>
+          <a class="footer__links-quicklinks-value" href="#">Home</a>
+          <a class="footer__links-quicklinks-value" href="#">Pricing Plan</a>
+          <a class="footer__links-quicklinks-value" href="#">Service</a>
+          <a class="footer__links-quicklinks-value" href="#">Blog</a>
+          <a class="footer__links-quicklinks-value" href="#">Our Team</a>
+        </div>
+
+        <div class="footer__links-support">
+          <a class="footer__links-support-value-head" href="#">Support</a>
+          <a class="footer__links-support-value" href="#">About us</a>
+          <a class="footer__links-support-value" href="#">Contact us</a>
+          <a class="footer__links-support-value" href="#">FAQ</a>
+          <a class="footer__links-support-value" href="#">Tems & Conditions</a>
+          <a class="footer__links-support-value" href="#">Privacy Policy</a>
+        </div>
+      </div>
+      
+      <div class="footer__help">
+        <span class="footer__help-caption">Need Help?</span>
+        <div class="footer__help-info">
+          <div class="footer__help-info-item">
+            <div class="footer__help-info-item-img">
+              <img src="./public/images/location.svg">
+            </div>
+            <span class="footer__help-info-item-value">
+              Tanjung Sari Street no.48, Pontianak City
+            </span>
+          </div>
+
+          <div class="footer__help-info-item">
+            <div class="footer__help-info-item-img">
+              <img src="./public/images/e-mail.svg">
+            </div>
+            <span class="footer__help-info-item-value">
+              Support@VRNas.com
+            </span>
+          </div>
+
+          <div class="footer__help-info-item">
+            <div class="footer__help-info-item-img">
+              <img src="./public/images/phone.svg">
+            </div>
+            <span class="footer__help-info-item-value">
+              +123 456 7890
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">© Copyright 2023, All Rights Reserved</p>
+      </div>  
+
+    </footer>
 
     <script type="module" src="/src/main.js"></script>
   </body>

@@ -5,9 +5,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     &__caption {
-        margin-top: 188px;
+        margin-top: 100px;
         @include mixins.caption-1-text;
         @include mixins.gradient-text;
     }
@@ -20,6 +21,33 @@
     }
 
     &__img {
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+    &__img-light {
+        position: absolute;
+        top: 90px;
+        right: 0;
+        z-index: 3;
+    }
+
+    &__img-sircle {
+        position: absolute;
+        bottom: -83px;
+        right: 123px;
+        z-index: 2;
+    }
+
+    &__img-bg {
         margin-top: 24px;
+        z-index: 1;
+    }
+
+    &__img-man {
+        position: absolute;
+        z-index: 4;
+        top: 100px;
+        right: 71px;
     }
 }

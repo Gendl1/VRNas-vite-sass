@@ -9,6 +9,8 @@
 @use 'testimonial';
 @use 'pricing';
 @use 'partners';
+@use 'articles';
+@use 'footer';
 
 body {
     background-color: $black-100-color;
@@ -19,6 +21,16 @@ body {
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
+}
+
+.special-container {
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+img.special-img {
+    max-width: none;
 }
 
 

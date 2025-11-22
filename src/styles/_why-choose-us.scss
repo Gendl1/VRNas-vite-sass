@@ -4,23 +4,31 @@
 .choose-us {
 
     &__img {
+        overflow: hidden;
         position: relative;
-        margin-top: 100px;
-        max-height: 475px;
+        max-width: 430px;
     }
 
     &__img-man {
+        position: relative;
         max-height: 475px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        z-index: 2;
     }
 
     &__img-video {
         position: absolute;
-        bottom: 0;
-        right: 50px;
+        bottom: 55px;
+        right: 70px;
+        z-index: 3;
     }
 
-    &__text {
-        margin-top: 48px;
+    &__img-light {
+        position: absolute;
+        top: 40px;
+        right: -142px;
+        z-index: 1;
     }
 
     &__text-caption {

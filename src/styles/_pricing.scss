@@ -2,6 +2,8 @@
 @use 'mixins' as mixins;
 
 .pricing {
+    overflow: hidden;
+    position: relative;
     &__caption {
         margin-top: 100px;
         @include mixins.caption-1-text;
@@ -22,16 +24,20 @@
     }
 
     &__display {
+        position: relative;
         margin-top: 47px;
         padding: 32px 22px 0 22px;
         background-color: $black-50-op81-color;
+        z-index: 2;
     }
 
     &__display-grid {
+        position: relative;
         border-bottom: 1px solid $white-op10-color;
         padding-bottom: 48px;
         display: grid;
         gap: 32px;
+        z-index: 2;
     }
 
     &__display-grid-item {
@@ -55,10 +61,24 @@
         color: $grey-1-color;
     }
 
+    &__display-light {
+        position: absolute;
+        bottom: 0px;
+        left: -250px;
+        z-index: 1;
+    }
+
     &__display-void {
         position: relative;
         min-height: 407px;
-        padding: none;
+        z-index: 2;
+        margin-bottom: 90px;
+    }
+
+    &__display-void-man {
+        position: absolute;
+        right: -23px;
+        bottom: 0;
     }
 
     &__banner {
@@ -97,8 +117,4 @@
         color: $grey-1-color;
     }
 
-}
-
-img.special-img {
-    max-width: none;
 }

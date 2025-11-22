@@ -1,0 +1,183 @@
+@use 'variables' as *;
+@use 'mixins' as mixins;
+
+.our-articles {
+
+    &__caption {
+        margin-top: 100px;
+        @include mixins.caption-1-text;
+        @include mixins.gradient-text;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-top: 12px;
+        @include mixins.h5-text;
+        color: $white-color;
+    }
+
+    &__subtitle {
+        margin-top: 40px;
+        @include mixins.h6-text;
+        color: $white-color;
+    }
+
+    &__display {
+        margin-top: 32px;
+        display: flex;
+        align-items: flex-end;
+        gap: 52px;
+        background-image: url('/public/images/articles_display.svg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 0 16px 20px 16px;
+        min-height: 266px;
+    }
+
+    &__display-data-caption {
+        @include mixins.caption-2-text;
+        color: $white-color;
+        background-color: rgba(255, 255, 255, 0.3);
+        max-width: fit-content;
+        border-radius: 16px;
+        padding: 2px 10px;
+    }
+
+    &__display-data-title {
+        margin-top: 12px;
+        @include mixins.h8-text;
+        color: $white-color;
+    }
+
+    &__display-button {
+        background-color: rgba(255, 255, 255, 0.06);
+        border: 1px solid;
+        border-image: $linear-border-color;
+        padding: 16.67px;
+    }
+
+    &__recent {
+        position: relative;
+        margin-top: 67px;
+        padding: 20px 16px 13px 16px;
+        background-color: $black-50-color;
+        z-index: 2;
+    }
+
+    &__recent-title {
+        @include mixins.h6-text;
+        color: $white-color;
+    }
+
+    &__recent-grid {
+        display: grid;
+        max-height: 504px;
+        overflow-y: scroll;
+    }
+
+    &__recent-grid-item {
+        display: flex;
+        gap: 21px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid $white-op15-color;
+
+        &:nth-child(4) {
+            border-bottom: none;
+            padding-bottom: 10px;
+        }
+    }
+
+    &__recent-grid-item-text {
+        max-width: 219px;
+    }
+
+    &__recent-grid-item-text-caption {
+        @include mixins.caption-2-text;
+        color: $white-color;
+        background-color: rgba(255, 255, 255, 0.3);
+        max-width: fit-content;
+        border-radius: 16px;
+        padding: 2px 10px;
+    }
+
+    &__recent-grid-item-text-value {
+        margin-top: 8px;
+        @include mixins.h11-text;
+        color: $white-color;
+    }
+
+    &__link {
+        display: inline-block;
+        position: absolute;
+        right: 35%;
+        margin-top: 32px;
+        padding: 18px 38px;
+        border: 1px solid;
+        border-image: $linear-border-color;
+        background-color: $white-op06-color;
+        @include mixins.button-1-text;
+        color: $white-color;
+        text-transform: uppercase;
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__form-bg {
+        position: absolute;
+        bottom: -39px;
+        left: -16px;
+        z-index: 1;
+    }
+
+    &__form-sub {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-top: 182px;
+        padding: 31px 13px;
+        background: $linear-color;
+        border-radius: 4px;
+        z-index: 2;
+    }
+
+    &__form-sub-caption {
+        @include mixins.h6-text;
+        color: $white-color;
+        text-align: center;
+    }
+
+    &__form-sub-input {
+        padding: 3px 3.67px 3.67px 14px;
+        display: flex;
+        background-color: $white-op07-color;
+    }
+
+    &__form-sub-input-img {
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    &__form-sub-input-field {
+        border: none;
+        background-color: transparent;
+        @include mixins.body-3-text;
+        color: $white-color;
+        margin-right: 84px;
+        width: 182px;
+        
+        &::placeholder {
+            color: $white-color;
+        }
+    }
+
+    &__form-sub-input-button {
+        padding: 16.67px;
+        background-color: $white-op21-color;
+    }
+}

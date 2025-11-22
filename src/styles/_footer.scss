@@ -1,0 +1,84 @@
+@use 'variables' as *;
+@use 'mixins';
+
+.footer {
+
+    &__contacts {
+        margin-top: 92px;
+        display: flex;
+        gap: 52px;
+    }
+
+    &__contacts-media {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__links {
+        margin-top: 56px;
+        display: flex;
+        gap: 100px;
+    }
+
+    &__links-quicklinks, &__links-support {
+        display: grid;
+        gap: 16px;
+    }
+
+    &__links-quicklinks-value-head, &__links-support-value-head {
+        text-decoration: none;
+        @include mixins.h10-text;
+        color: $white-color;
+    }
+
+    &__links-quicklinks-value, &__links-support-value {
+        text-decoration: none;
+        @include mixins.body-1-text;
+        color: $white-color;
+    }
+
+    &__help {
+        margin-top: 64px;
+    }
+
+    &__help-caption {
+        @include mixins.h10-text;
+        color: $white-color;
+    }
+
+    &__help-info {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__help-info-item {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__help-info-item-img {
+        display: flex;
+        align-items: center;
+    }
+
+    &__help-info-item-value {
+        @include mixins.body-1-text;
+        color: $white-color;
+    }
+
+    &__copyright {
+        padding: 32px 0 21px 0;
+        margin-top: 48px;
+        border-top: 1px solid;
+        border-image: $linear-border-color;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__copyright-text {
+        @include mixins.body-1-text;
+        color: $white-color;
+    }
+}
