@@ -1,7 +1,14 @@
 @use 'variables' as *;
 
 .hero {
-    &__title {
+    
+    &__main {
+        @media (min-width:1000px) {
+            display: flex;
+        }
+    }
+
+    &__main-text-title {
         font-family: $heading-2-font;
         font-size: $heading-2-size;
         line-height: $heading-2-lh;
@@ -9,7 +16,7 @@
         margin-top: 80px;
     }
 
-    &__subtitle {
+    &__main-text-subtitle {
         font-family: $body-1-font;
         font-size: $body-1-size;
         line-height: $body-1-lh;
@@ -17,7 +24,7 @@
         margin-top: 12px;
     }
 
-    &__button {
+    &__main-text-button {
         display: inline-block;
         font-family: $button-1-font;
         font-size: $button-1-size;
@@ -29,18 +36,22 @@
         margin-top: 32px;
     }
 
-    &__clients {
+    &__main-text-clients {
         margin-top: 32px;
         display: flex;
         gap: 18px;
+
+        @media (min-width:100px) {
+            margin-bottom: 105px;
+        }
     }
 
-    &__clients-count {
+    &__main-text-clients-count {
         align-self: center;
         position: relative;
     }
 
-    &__clients-text {
+    &__main-text-clients-caption {
         font-family: $body-1-font;
         font-size: $body-1-size;
         line-height: $body-1-lh;
@@ -52,30 +63,50 @@
         }
     }
 
-    &__clients-underline {
+    &__main-text-clients-underline {
         position: absolute;
         top: 19px;
         left: -6px;
     }
 
-    &__display {
+    &__main-display {
         z-index: 2;
         overflow: hidden;
-        max-width: 500px;
+        max-width: 700px;
         min-height: 422px;
         position: relative;
         display: flex;
+
+        @media (min-width: 650px) {
+            overflow: visible;
+        }
     }
 
-    &__display-video {
+    &__main-display-video {
         position: absolute;
         top:145px;
         left: 16px;
+        z-index: 4;
+
+        @media (min-width:1000px) {
+            top: 302px;
+            left: 0;
+        }
     }
 
-    &__display-photo {
+    &__main-display-photo {
         position: absolute;
         right: -115px;
+        z-index: 3;
+
+        @media (min-width:650px) {
+            right: 0;
+        }
+
+        @media (min-width: 1000px) {
+            position: relative;
+            bottom: -57px;
+        }
     }
 
     &__background {
@@ -84,9 +115,10 @@
         z-index: 1;
     }
 
-    &__light {
+    &__main-display-light {
         position: absolute;
-        top: 0;
+        top:-20px;
+        z-index: 2;
     }
 
     &__grid {
@@ -132,4 +164,11 @@
 
 .grid-item-service {
     grid-area: Service;
+}
+
+.light {
+    max-width: none;
+    @media (min-width:500px) {
+        max-width: 100%;
+    }
 }

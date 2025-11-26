@@ -14,61 +14,71 @@
         gap: 20px;
     }
 
-    &__links {
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (min-width:667px) {
+            justify-content: space-between;
+        }
+    }
+
+    &__info-links {
         margin-top: 56px;
         display: flex;
         gap: 100px;
     }
 
-    &__links-quicklinks, &__links-support {
+    &__info-links-quicklinks, &__info-links-support {
         display: grid;
         gap: 16px;
     }
 
-    &__links-quicklinks-value-head, &__links-support-value-head {
+    &__info-links-quicklinks-value-head, &__info-links-support-value-head {
         text-decoration: none;
         @include mixins.h10-text;
         color: $white-color;
     }
 
-    &__links-quicklinks-value, &__links-support-value {
+    &__info-links-quicklinks-value, &__info-links-support-value {
         text-decoration: none;
         @include mixins.body-1-text;
         color: $white-color;
     }
 
-    &__help {
+    &__info-help {
         margin-top: 64px;
     }
 
-    &__help-caption {
+    &__info-help-caption {
         @include mixins.h10-text;
         color: $white-color;
     }
 
-    &__help-info {
+    &__info-help-data {
         margin-top: 16px;
         display: flex;
         flex-direction: column;
         gap: 16px;
     }
 
-    &__help-info-item {
+    &__info-help-data-item {
         display: flex;
         gap: 8px;
     }
 
-    &__help-info-item-img {
+    &__info-help-data-item-img {
         display: flex;
         align-items: center;
     }
 
-    &__help-info-item-value {
+    &__info-help-data-item-value {
         @include mixins.body-1-text;
         color: $white-color;
     }
 
     &__copyright {
+        position: relative;
         padding: 32px 0 21px 0;
         margin-top: 48px;
         border-top: 1px solid;
@@ -80,5 +90,69 @@
     &__copyright-text {
         @include mixins.body-1-text;
         color: $white-color;
+    }
+
+    &__copyright-bg {
+        position: absolute;
+        bottom: 0;
+        left: -16px;
+    }
+
+    &__form-sub {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-top: 182px;
+        padding: 31px 13px;
+        background: $linear-color;
+        border-radius: 4px;
+        z-index: 2;
+    }
+
+    &__form-sub-caption {
+        @include mixins.h6-text;
+        color: $white-color;
+        text-align: center;
+    }
+
+    &__form-sub-input {
+        padding: 3px 3.67px 3.67px 14px;
+        display: flex;
+        background-color: $white-op07-color;
+    }
+
+    &__form-sub-input-img {
+        align-self: center;
+        margin-right: 8px;
+    }
+
+    &__form-sub-input-field {
+        border: none;
+        background-color: transparent;
+        @include mixins.body-3-text;
+        color: $white-color;
+        margin-right: 84px;
+        width: 182px;
+        
+        &::placeholder {
+            color: $white-color;
+        }
+    }
+
+    &__form-sub-input-button {
+        padding: 16.67px;
+        background-color: $white-op21-color;
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__form-bg {
+        display: none;
+        position: absolute;
+        z-index: 1;
     }
 }

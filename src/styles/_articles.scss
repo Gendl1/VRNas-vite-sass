@@ -120,64 +120,9 @@
         @include mixins.button-1-text;
         color: $white-color;
         text-transform: uppercase;
-    }
 
-    &__form {
-        position: relative;
-    }
-
-    &__form-bg {
-        position: absolute;
-        bottom: -39px;
-        left: -16px;
-        z-index: 1;
-    }
-
-    &__form-sub {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        margin-top: 182px;
-        padding: 31px 13px;
-        background: $linear-color;
-        border-radius: 4px;
-        z-index: 2;
-    }
-
-    &__form-sub-caption {
-        @include mixins.h6-text;
-        color: $white-color;
-        text-align: center;
-    }
-
-    &__form-sub-input {
-        padding: 3px 3.67px 3.67px 14px;
-        display: flex;
-        background-color: $white-op07-color;
-    }
-
-    &__form-sub-input-img {
-        align-self: center;
-        margin-right: 8px;
-    }
-
-    &__form-sub-input-field {
-        border: none;
-        background-color: transparent;
-        @include mixins.body-3-text;
-        color: $white-color;
-        margin-right: 84px;
-        width: 182px;
-        
-        &::placeholder {
-            color: $white-color;
+        @media (min-width:750px) {
+            right: 41%;
         }
-    }
-
-    &__form-sub-input-button {
-        padding: 16.67px;
-        background-color: $white-op21-color;
     }
 }

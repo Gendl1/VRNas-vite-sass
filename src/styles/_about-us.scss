@@ -2,17 +2,21 @@
 @use 'mixins';
 
 .about-us {
-
     &__img {
         overflow: hidden;
         max-width: 430px;
         position: relative;
+
+        @media (min-width: 450px) {
+            justify-self: center;
+            overflow: visible;
+        }
     }
 
     &__img-man {
         position: relative;
-        z-index: 2;
-        margin-left: 16px;
+        z-index: 3;
+        margin-left: 30px;
         margin-bottom: 85px;
         margin-top: 100px;
     }
@@ -21,7 +25,11 @@
         position: absolute;
         right: 16px;
         top: 490px;
-        z-index: 3;
+        z-index: 4;
+
+        @media (min-width: 450px) {
+            top: 390px;
+        }
     }
 
     &__img-light {
@@ -29,11 +37,23 @@
         position: absolute;
         top: 92px;
         left: -171px;
-        z-index: 1;
+        z-index: 2;
+
+        @media (min-width:450px) {
+            top: 0;
+            right: -145px;
+        }
     }
 
-    &__light {
+    &__img-bg {
         position: absolute;
+        top: 195px;
+        left: 18px;
+        z-index: 1;
+
+        @media (min-width: 450px) {
+            top: 95px;
+        }
     }
 
     &__caption {
@@ -87,5 +107,12 @@
         font-size: $body-3-size;
         line-height: $body-3-lh;
         color: $white-color;
+    }
+}
+
+.light2 {
+    max-width: none;
+    @media (min-width:450px) {
+        max-width: 100%;
     }
 }

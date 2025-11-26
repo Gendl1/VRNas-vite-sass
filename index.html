@@ -22,50 +22,51 @@
     </header>
 
     <section class="hero">
-      <h1 class="hero__title special-container">
-        Immerse Yourself in Virtual Reality
-      </h1>
 
-      <p class="hero__subtitle special-container">
-        Experience Unforgettable Events in VR. Bring your events to life like never before with our VR services
-      </p>
+      <div class="hero__main">
+        <div class="hero__main-text">
+          <h1 class="hero__main-text-title special-container">
+            Immerse Yourself in Virtual Reality
+          </h1>
 
-      <div class="container">
-        <a class="hero__button">
-          discover more
-        </a>
-      </div>
-      
-
-      <div class="hero__clients special-container">
-        <div class="hero__clients-img">
-          <img src="./public/images/hero_clients.png">
-        </div>
-
-        <div class="hero__clients-count">
-          <p class="hero__clients-text">
-            <span class="hero__clients-text--fat">32k+</span> Happy Client
+          <p class="hero__main-text-subtitle special-container">
+            Experience Unforgettable Events in VR. Bring your events to life like never before with our VR services
           </p>
-          <div class="hero__clients-underline">
-            <img src="./public/images/happy-clients_underline.svg">
+
+          <div class="container">
+            <a class="hero__main-text-button">
+              discover more
+            </a>
+          </div>
+          
+          <div class="hero__main-text-clients special-container">
+            <div class="hero__main-text-clients-img">
+              <img src="./public/images/hero_clients.png">
+            </div>
+
+            <div class="hero__main-text-clients-count">
+              <p class="hero__main-text-clients-caption">
+                <span class="hero__main-text-clients-caption--fat">32k+</span> Happy Client
+              </p>
+              <div class="hero__main-text-clients-underline">
+                <img src="./public/images/happy-clients_underline.svg">
+              </div>
+            </div>
           </div>
         </div>
-        
-      </div>
 
-      <div class="hero__display">
-        <div class="hero__display-video">
-          <img src="./public/images/hero_video.png">
-        </div>
-        <div class="hero__light">
-          <img src="./public/images/light.svg" class="special-img">
-        </div>
-        <div class="hero__display-photo">
-          <img src="./public/images/hero_man.png">
+        <div class="hero__main-display">
+          <div class="hero__main-display-video">
+            <img src="./public/images/hero_video.png">
+          </div>
+          <div class="hero__main-display-light">
+            <img src="./public/images/light.svg" class="light">
+          </div>
+          <div class="hero__main-display-photo">
+            <img src="./public/images/hero_man1.png">
+          </div>
         </div>
       </div>
-
-      
 
       <div class="hero__background">
         <img src="./public/images/background_vector.svg">
@@ -104,13 +105,16 @@
     <section class="about-us">
       <div class="about-us__img">
         <div class="about-us__img-man">
-          <img src="./public/images/about-us_man.png">
+          <img src="./public/images/about-us_man.svg">
         </div>
         <div class="about-us__img-video">
           <img src="./public/images/about-us_video.png">
         </div>
         <div class="about-us__img-light">
-          <img src="./public/images/light2.svg" class="special-img">
+          <img src="./public/images/light2.svg" class="light2">
+        </div>
+        <div class="about-us__img-bg">
+          <img src="./public/images/about-us_bg.svg">
         </div>
       </div>
 
@@ -248,7 +252,7 @@
     <section class="choose-us">
       <div class="choose-us__img">
         <div class="choose-us__img-man">
-          <img src="./public/images/wcu-man.png">
+          <img src="./public/images/wcu-man.svg">
         </div>
         
         <div class="choose-us__img-video">
@@ -257,6 +261,10 @@
 
         <div class="choose-us__img-light">
           <img src="/public/images/light2.svg" class="special-img">
+        </div>
+
+        <div class="choose-us__img-bg">
+          <img src="./public/images/wcu-bg.svg">
         </div>
       </div>
 
@@ -362,7 +370,7 @@
       </p>
 
       <div class="pricing__display-light">
-          <img src="./public/images/light4.svg" class="special-img">
+          <img src="./public/images/light4.svg" class="light4">
         </div>
 
       <div class="pricing__display">
@@ -534,28 +542,28 @@
         <span>see all</span>
       </a>
 
-      <div class="our-articles__form">
-        <div class="our-articles__form-bg">
-          <img src="./public/images/articles_bg.svg" class="special-img">
-        </div>
-        <div class="our-articles__form-sub">
-          <span class="our-articles__form-sub-caption">Subscribe to our newsletter for latest updates</span>
-          <div class="our-articles__form-sub-input">
-            <div class="our-articles__form-sub-input-img">
-              <img src="./public/images/input_img.svg">
-            </div>
-            <input class="our-articles__form-sub-input-field" placeholder="Enter your email address" id="1">
-            <button class="our-articles__form-sub-input-button">
-              <img src="./public/images/input_button_img.svg">
-            </button>
-          </div>
-          
-        </div>
-      </div>
-
     </section>
 
     <footer class="footer container">
+      <div class="footer__form">
+        <div class="footer__form-sub">
+          <span class="footer__form-sub-caption">Subscribe to our newsletter for latest updates</span>
+          <div class="footer__form-sub-input">
+            <div class="footer__form-sub-input-img">
+              <img src="./public/images/input_img.svg">
+            </div>
+            <input class="footer__form-sub-input-field" placeholder="Enter your email address" id="1">
+            <button class="footer__form-sub-input-button">
+              <img src="./public/images/input_button_img.svg">
+            </button>
+          </div>
+        </div>
+
+        <div class="footer__form-bg">
+          <img src="./public/images/form_bg.svg">
+        </div>
+      </div>
+
       <div class="footer__contacts">
         <div class="footer__contacts-img">
           <img src="./public/images/logo.png">
@@ -568,62 +576,66 @@
         </div>
       </div>
 
-      <div class="footer__links">
-        <div class="footer__links-quicklinks">
-          <a class="footer__links-quicklinks-value-head" href="#">Quicklinks</a>
-          <a class="footer__links-quicklinks-value" href="#">Home</a>
-          <a class="footer__links-quicklinks-value" href="#">Pricing Plan</a>
-          <a class="footer__links-quicklinks-value" href="#">Service</a>
-          <a class="footer__links-quicklinks-value" href="#">Blog</a>
-          <a class="footer__links-quicklinks-value" href="#">Our Team</a>
-        </div>
-
-        <div class="footer__links-support">
-          <a class="footer__links-support-value-head" href="#">Support</a>
-          <a class="footer__links-support-value" href="#">About us</a>
-          <a class="footer__links-support-value" href="#">Contact us</a>
-          <a class="footer__links-support-value" href="#">FAQ</a>
-          <a class="footer__links-support-value" href="#">Tems & Conditions</a>
-          <a class="footer__links-support-value" href="#">Privacy Policy</a>
-        </div>
-      </div>
-      
-      <div class="footer__help">
-        <span class="footer__help-caption">Need Help?</span>
-        <div class="footer__help-info">
-          <div class="footer__help-info-item">
-            <div class="footer__help-info-item-img">
-              <img src="./public/images/location.svg">
-            </div>
-            <span class="footer__help-info-item-value">
-              Tanjung Sari Street no.48, Pontianak City
-            </span>
+      <div class="footer__info">
+        <div class="footer__info-links">
+          <div class="footer__info-links-quicklinks">
+            <a class="footer__info-links-quicklinks-value-head" href="#">Quicklinks</a>
+            <a class="footer__info-links-quicklinks-value" href="#">Home</a>
+            <a class="footer__info-links-quicklinks-value" href="#">Pricing Plan</a>
+            <a class="footer__info-links-quicklinks-value" href="#">Service</a>
+            <a class="footer__info-links-quicklinks-value" href="#">Blog</a>
+            <a class="footer__info-links-quicklinks-value" href="#">Our Team</a>
           </div>
 
-          <div class="footer__help-info-item">
-            <div class="footer__help-info-item-img">
-              <img src="./public/images/e-mail.svg">
-            </div>
-            <span class="footer__help-info-item-value">
-              Support@VRNas.com
-            </span>
+          <div class="footer__info-links-support">
+            <a class="footer__info-links-support-value-head" href="#">Support</a>
+            <a class="footer__info-links-support-value" href="#">About us</a>
+            <a class="footer__info-links-support-value" href="#">Contact us</a>
+            <a class="footer__info-links-support-value" href="#">FAQ</a>
+            <a class="footer__info-links-support-value" href="#">Tems & Conditions</a>
+            <a class="footer__info-links-support-value" href="#">Privacy Policy</a>
           </div>
-
-          <div class="footer__help-info-item">
-            <div class="footer__help-info-item-img">
-              <img src="./public/images/phone.svg">
+        </div>
+        
+        <div class="footer__info-help">
+          <span class="footer__info-help-caption">Need Help?</span>
+          <div class="footer__info-help-data">
+            <div class="footer__info-help-data-item">
+              <div class="footer__info-help-data-item-img">
+                <img src="./public/images/location.svg">
+              </div>
+              <span class="footer__info-help-data-item-value">
+                Tanjung Sari Street no.48, Pontianak City
+              </span>
             </div>
-            <span class="footer__help-info-item-value">
-              +123 456 7890
-            </span>
+
+            <div class="footer__info-help-data-item">
+              <div class="footer__info-help-data-item-img">
+                <img src="./public/images/e-mail.svg">
+              </div>
+              <span class="footer__info-help-data-item-value">
+                Support@VRNas.com
+              </span>
+            </div>
+
+            <div class="footer__info-help-data-item">
+              <div class="footer__info-help-data-item-img">
+                <img src="./public/images/phone.svg">
+              </div>
+              <span class="footer__info-help-data-item-value">
+                +123 456 7890
+              </span>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="footer__copyright">
         <p class="footer__copyright-text">© Copyright 2023, All Rights Reserved</p>
-      </div>  
-
+        <div class="footer__copyright-bg">
+          <img src="./public/images/footer_bg.svg">
+        </div>
+      </div>
     </footer>
 
     <script type="module" src="/src/main.js"></script>

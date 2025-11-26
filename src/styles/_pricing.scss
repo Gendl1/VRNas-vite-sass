@@ -66,6 +66,10 @@
         bottom: 0px;
         left: -250px;
         z-index: 1;
+        @media (min-width:750px) {
+            bottom: 90px;
+            left: -150px;
+        }
     }
 
     &__display-void {
@@ -117,4 +121,11 @@
         color: $grey-1-color;
     }
 
+}
+
+.light4 {
+    max-width: none;
+    @media (min-width:700px) {
+        max-width: 100%;
+    }
 }
