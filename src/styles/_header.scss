@@ -1,14 +1,23 @@
+@use 'variables' as *;
+@use 'mixins' as mixins;
+
 .header {
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding-top: 42px;
+    align-items: center;
+    padding-top: 31px;
+    padding-bottom: 31px;
 
     &__effect {
-        opacity: 30%;
+        opacity: 90%;
         position: absolute;
         top: 0;
         right: 0;
+
+        @media (min-width:1300px) {
+            right: -70px;
+        }
     }
 
     &__logo {
@@ -17,5 +26,49 @@
 
     &__burger {
         background-color: transparent;
+
+        @media (min-width:760px) {
+            display: none;
+        }
+    }
+
+    &__nav {
+        display: none;
+        gap: 64px;
+
+        @media (min-width:760px) {
+            display: flex;
+        }
+    }
+
+    &__nav-item {
+        @include mixins.body-1-text;
+        color: $white-color;
+        display: flex;
+        gap: 4px;
+        text-decoration: none;
+
+        &-img {
+            display: flex;
+            align-items: center;
+        }
+
+        &:nth-child(1) {
+            @include mixins.body-1-1-text;
+        }
+    }
+
+    &__link {
+        display: none;
+        @include mixins.button-2-text;
+        color: $white-color;
+        padding: 12px 24px;
+        background: transparent;
+        border: 1px solid;
+        border-image: $linear-border-color;
+        
+        @media (min-width:1023px) {
+            display: block;
+        }
     }
 }

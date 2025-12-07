@@ -1,34 +1,37 @@
 @use 'variables' as *;
+@use 'mixins' as mixins;
 
 .hero {
     
     &__main {
+        display: grid;
         @media (min-width:1000px) {
-            display: flex;
+            grid-template-columns: 1fr 1fr;
         }
     }
 
     &__main-text-title {
-        font-family: $heading-2-font;
-        font-size: $heading-2-size;
-        line-height: $heading-2-lh;
+        max-width: 540px;
+        @include mixins.h2-text;
         color: $white-color;
         margin-top: 80px;
+
+        @media (min-width:1400px) {
+            @include mixins.h1-text;
+            max-width: 540px;
+        }
     }
 
     &__main-text-subtitle {
-        font-family: $body-1-font;
-        font-size: $body-1-size;
-        line-height: $body-1-lh;
+        @include mixins.body-1-text;
         color: $grey-2-color;
         margin-top: 12px;
+        max-width: 446px;
     }
 
     &__main-text-button {
         display: inline-block;
-        font-family: $button-1-font;
-        font-size: $button-1-size;
-        line-height: $button-1-lh;
+        @include mixins.button-1-text;
         color: $white-color;
         text-transform: uppercase;
         padding: 18px 38px;
@@ -37,6 +40,7 @@
     }
 
     &__main-text-clients {
+        position: relative;
         margin-top: 32px;
         display: flex;
         gap: 18px;
@@ -52,9 +56,7 @@
     }
 
     &__main-text-clients-caption {
-        font-family: $body-1-font;
-        font-size: $body-1-size;
-        line-height: $body-1-lh;
+        @include mixins.body-1-text;
         color: $grey-2-color;
 
         &--fat {
@@ -69,6 +71,18 @@
         left: -6px;
     }
 
+    &__main-text-clients-video {
+        display: none;
+        position: absolute;
+        z-index: 4;
+        top: -33px;
+        right: 37px;
+        
+        @media (min-width:1400px) {
+            display: block;
+        }
+    }
+
     &__main-display {
         z-index: 2;
         overflow: hidden;
@@ -80,6 +94,13 @@
         @media (min-width: 650px) {
             overflow: visible;
         }
+
+        @media (min-width:1000px) {
+            top: -61px;
+            overflow-x: clip;
+            padding-left: 172px;
+            margin-left: -172px;
+        }
     }
 
     &__main-display-video {
@@ -89,12 +110,17 @@
         z-index: 4;
 
         @media (min-width:1000px) {
-            top: 302px;
-            left: 0;
+            top: 400px;
+            left: 65px;
+        }
+
+        @media (min-width:1400px) {
+            display: none;
         }
     }
 
     &__main-display-photo {
+        width: 354px;
         position: absolute;
         right: -115px;
         z-index: 3;
@@ -104,21 +130,51 @@
         }
 
         @media (min-width: 1000px) {
+            width: 526px;
             position: relative;
-            bottom: -57px;
+            bottom: -61px;
+        }
+
+        @media (min-width:1400px) {
+            right: -78px;
         }
     }
 
     &__background {
         position: absolute;
         top: 290px;
+        left: -679px;
         z-index: 1;
+
+        @media (min-width:700px) {
+            left: -367px;
+        }
+
+        @media (min-width:1000px) {
+            left:-89px;
+            top: 290px;
+        }
+
+        @media (min-width:1400px) {
+            left: 0;
+            top: 237px;
+        }
     }
 
     &__main-display-light {
         position: absolute;
         top:-20px;
         z-index: 2;
+
+        @media (min-width:1000px) {
+            left: 25px;
+            top: 180px;
+        }
+
+        @media (min-width:1400px) {
+            left: 46px;
+            top: 93px;
+        }
     }
 
     &__grid {
@@ -132,24 +188,27 @@
         "Service";
         gap: 50px;
         z-index: 2;
+
+        @media (min-width: 1000px) {
+            grid-template-areas: 
+            "Expertise Customization Service";
+            padding: 42px 64px 53px 64px;
+        }
+
     }
 
-    &__item-img {
+    &__grid-item-img {
         margin-bottom: 42px;
     }
 
-    &__item-title {
-        font-family: $heading-7-font;
-        font-size: $heading-7-size;
-        line-height: $heading-7-lh;
+    &__grid-item-title {
+        @include mixins.h7-text;
         color: $white-color;
     }
 
-    &__item-text {
+    &__grid-item-text {
         margin-top: 12px;
-        font-family: $body-2-font;
-        font-size: $body-2-size;
-        line-height: $body-2-lh;
+        @include mixins.body-2-text;
         color: $grey-1-color;
     }
 }

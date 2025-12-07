@@ -2,8 +2,18 @@
 @use 'mixins' as mixins;
 
 .pricing {
-    overflow: hidden;
     position: relative;
+
+    @media (min-width:1000px) {
+        padding-bottom: 200px;
+        margin-bottom: -200px;
+    }
+
+    @media (min-width:1400px) {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
     &__caption {
         margin-top: 100px;
         @include mixins.caption-1-text;
@@ -27,8 +37,12 @@
         position: relative;
         margin-top: 47px;
         padding: 32px 22px 0 22px;
-        background-color: $black-50-op81-color;
+        background-color: $black-50-op81-trnp2-color;
         z-index: 2;
+
+        @media (min-width:1000px) {
+            display: flex;
+        }
     }
 
     &__display-grid {
@@ -38,6 +52,13 @@
         display: grid;
         gap: 32px;
         z-index: 2;
+
+        @media (min-width:1000px) {
+            width: 70%;
+            border-bottom: none;
+            border-right: 1px solid $white-op10-color;
+            padding-right: 20px;
+        }
     }
 
     &__display-grid-item {
@@ -59,16 +80,30 @@
         margin-top: 12px;
         @include mixins.body-3-text;
         color: $grey-1-color;
+
+        @media (min-width:1400px) {
+            max-width: 582px;
+        }
     }
 
     &__display-light {
         position: absolute;
         bottom: 0px;
-        left: -250px;
+        left: -91px;
         z-index: 1;
         @media (min-width:750px) {
-            bottom: 90px;
+            bottom: -88px;
             left: -150px;
+        }
+
+        @media (min-width:1000px) {
+            left: 124px;
+            bottom: 186px;
+        }
+
+        @media (min-width:1400px) {
+            left: 123px;
+            bottom: -118px;
         }
     }
 
@@ -83,10 +118,19 @@
         position: absolute;
         right: -23px;
         bottom: 0;
+        
+        @media (min-width:1000px) {
+            right: -265px;
+            bottom: -89px;
+        }
+
+        @media (min-width:1400px) {
+            right: -349px;
+        }
     }
 
     &__banner {
-        max-width: 321px;
+        min-width: 321px;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
@@ -98,6 +142,16 @@
         position: absolute;
         left: -6px;
         bottom: -88px;
+
+        @media (min-width:1000px) {
+            left: -159px;
+            bottom: -283px;
+        }
+
+        @media (min-width:1400px) {
+            bottom: -140px;
+            left: -89px;
+        }
     }
 
     &__banner-caption {
@@ -123,9 +177,3 @@
 
 }
 
-.light4 {
-    max-width: none;
-    @media (min-width:700px) {
-        max-width: 100%;
-    }
-}

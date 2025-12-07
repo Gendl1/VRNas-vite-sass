@@ -3,10 +3,29 @@
 
 .footer {
 
+    &__wrp {
+        @media (min-width:1400px) {
+            display: flex;
+            gap: 177px;
+            margin-top: 182px;
+        }
+    }
+
     &__contacts {
         margin-top: 92px;
         display: flex;
         gap: 52px;
+
+        @media (min-width:1400px) {
+            margin-top: 0;
+            flex-direction: column;
+            gap: 139px;
+        }
+    }
+
+    &__contacts-img {
+        display: flex;
+        align-items: center;
     }
 
     &__contacts-media {
@@ -21,12 +40,21 @@
         @media (min-width:667px) {
             justify-content: space-between;
         }
+
+        @media (min-width:1400px) {
+            gap: 86px;
+        }
     }
 
     &__info-links {
         margin-top: 56px;
         display: flex;
         gap: 100px;
+
+        @media (min-width:1400px) {
+            margin-top: 0;
+            gap:149px;
+        }
     }
 
     &__info-links-quicklinks, &__info-links-support {
@@ -48,6 +76,10 @@
 
     &__info-help {
         margin-top: 64px;
+
+        @media (min-width:1400px) {
+            margin-top: 0;
+        }
     }
 
     &__info-help-caption {
@@ -85,6 +117,10 @@
         border-image: $linear-border-color;
         display: flex;
         justify-content: center;
+
+        @media (min-width:1400px) {
+            margin-top: 33px;
+        }
     }
 
     &__copyright-text {
@@ -96,6 +132,14 @@
         position: absolute;
         bottom: 0;
         left: -16px;
+
+        @media (min-width:1000px) {
+            left: -50px;
+        }
+        
+        @media (min-width:1400px) {
+            left: -120px;
+        }
     }
 
     &__form-sub {
@@ -109,12 +153,28 @@
         background: $linear-color;
         border-radius: 4px;
         z-index: 2;
+
+        @media (min-width:1000px) {
+            flex-direction: row;
+            gap: 0;
+            justify-content: space-between;
+            padding: 38px 74px 31px 74px;
+        }
+
+        @media (min-width:1400px) {
+            margin-top: 120px;
+        }
     }
 
     &__form-sub-caption {
         @include mixins.h6-text;
         color: $white-color;
         text-align: center;
+        max-width: 520px;
+
+        @media (min-width:1000px) {
+            text-align: start;
+        }
     }
 
     &__form-sub-input {

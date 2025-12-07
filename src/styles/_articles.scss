@@ -2,37 +2,95 @@
 @use 'mixins' as mixins;
 
 .our-articles {
-
+    position: relative;
     &__caption {
-        margin-top: 100px;
+        margin-top: 200px;
         @include mixins.caption-1-text;
         @include mixins.gradient-text;
         text-transform: uppercase;
     }
 
+
     &__title {
         margin-top: 12px;
         @include mixins.h5-text;
         color: $white-color;
+
+        @media (min-width:1400px) {
+            @include mixins.h2-text;
+        }
     }
 
     &__subtitle {
         margin-top: 40px;
         @include mixins.h6-text;
         color: $white-color;
+
+        @media (min-width:1400px) {
+            position: relative;
+            margin-top: 104px;
+            z-index: 2;
+        }
+    }
+
+    &__light {
+        display: none;
+        position: absolute;
+        top: 238px;
+        left: -180px;
+        z-index: 1;
+
+        @media (min-width:1400px) {
+            display: block;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        top: 775px;
+        left: -1010px;
+
+        @media (min-width:700px) {
+            top: 783px;
+            left: -672px;
+        }
+
+        @media (min-width:1000px) {
+            top: 749px;
+            left: -451px;
+        }
+
+        @media (min-width:1400px) {
+            top: 500px;
+            left: -120px;
+        }
+    }
+
+    &__wrp {
+        @media (min-width:1400px) {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
     }
 
     &__display {
         margin-top: 32px;
         display: flex;
         align-items: flex-end;
-        gap: 52px;
+        justify-content: space-between;
         background-image: url('/public/images/articles_display.svg');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         padding: 0 16px 20px 16px;
         min-height: 266px;
+
+        @media (min-width:1400px) {
+            width: 636px;
+            height: 425px;
+            box-sizing: border-box;
+            z-index: 2;
+        }
     }
 
     &__display-data-caption {
@@ -45,9 +103,14 @@
     }
 
     &__display-data-title {
+        max-width: 509px;
         margin-top: 12px;
         @include mixins.h8-text;
         color: $white-color;
+
+        @media (min-width:1400px) {
+            @include mixins.h5-text;
+        }
     }
 
     &__display-button {
@@ -63,6 +126,15 @@
         padding: 20px 16px 13px 16px;
         background-color: $black-50-color;
         z-index: 2;
+
+        @media (min-width:1400px) {
+            margin-top: 0;
+            position: relative;
+            top: -68px;
+            right: 46px;
+            padding: 32px 120px 1px 97px;
+            z-index: 1;
+        }
     }
 
     &__recent-title {
@@ -74,6 +146,10 @@
         display: grid;
         max-height: 504px;
         overflow-y: scroll;
+
+        @media (min-width:1400px) {
+            max-height: 536px;
+        }
     }
 
     &__recent-grid-item {
@@ -87,10 +163,23 @@
             border-bottom: none;
             padding-bottom: 10px;
         }
+
+        @media (min-width:1400px) {
+            width: 513px;
+            height: 91px;
+        }
     }
 
     &__recent-grid-item-text {
         max-width: 219px;
+
+        @media (min-width:700px) {
+            max-width: none;
+        }
+
+        @media (min-width:1400px) {
+            max-width: 297px;
+        }
     }
 
     &__recent-grid-item-text-caption {
@@ -106,6 +195,19 @@
         margin-top: 8px;
         @include mixins.h11-text;
         color: $white-color;
+
+        @media (min-width:1400px) {
+            @include mixins.h9-text;
+        }
+    }
+
+    &__recent-grid-item-link {
+        display: none;
+        align-items: center;
+
+        @media (min-width:1400px) {
+            display: flex;
+        }
     }
 
     &__link {
@@ -123,6 +225,16 @@
 
         @media (min-width:750px) {
             right: 41%;
+        }
+
+        @media (min-width:1000px) {
+            top: 213px;
+            right: 49px;
+            margin-top: 0;
+        }
+
+        @media (min-width:1400px) {
+            top: 223px;
         }
     }
 }

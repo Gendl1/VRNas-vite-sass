@@ -2,14 +2,31 @@
 @use 'mixins';
 
 .about-us {
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+    gap: 68px;
+
+    @media (min-width:1000px) {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 120px;
+        gap: 48px;
+    }
+
     &__img {
         overflow: hidden;
         max-width: 430px;
         position: relative;
+        padding-bottom: 20px;
+        margin-bottom: -20px;
 
         @media (min-width: 450px) {
             justify-self: center;
             overflow: visible;
+        }
+
+        @media (min-width:1400px) {
+            max-width: none;
         }
     }
 
@@ -17,18 +34,31 @@
         position: relative;
         z-index: 3;
         margin-left: 30px;
-        margin-bottom: 85px;
         margin-top: 100px;
+
+        @media (min-width:1000px) {
+            margin-top: 0;
+        }
     }
 
     &__img-video {
         position: absolute;
-        right: 16px;
-        top: 490px;
+        right: 23px;
+        top: 503px;
         z-index: 4;
+        width: 147px;
 
-        @media (min-width: 450px) {
-            top: 390px;
+        @media (min-width: 700px) {
+            top: 503px;
+            right: 18px;
+        }
+
+        @media (min-width:1000px) {
+            top: 389px;
+        }
+
+        @media (min-width:1400px) {
+            top: 530px;
         }
     }
 
@@ -40,26 +70,43 @@
         z-index: 2;
 
         @media (min-width:450px) {
-            top: 0;
+            top: 109px;
             right: -145px;
+        }
+
+        @media (min-width:1000px) {
+            top: 20px;
         }
     }
 
     &__img-bg {
         position: absolute;
-        top: 195px;
+        top: 207px;
         left: 18px;
         z-index: 1;
+        width: 300px;
 
-        @media (min-width: 450px) {
-            top: 95px;
+        @media (min-width: 700px) {
+            top: 207px;
+        }
+
+        @media (min-width:1000px) {
+            top: 107px;
+        }
+
+        @media (min-width:1400px) {
+            top: 126px;
+            width: 400px;
         }
     }
 
+    &__content {
+        padding-right: 50px;
+        align-self: self-end;
+    }
+
     &__caption {
-        font-family: $caption-1-font;
-        font-size: $caption-1-size;
-        line-height: $caption-1-lh;
+        @include mixins.caption-1-text;
         background: $linear-color;
         background-clip: text;
         color: transparent;
@@ -68,17 +115,17 @@
     }
 
     &__title {
-        font-family: $heading-5-font;
-        font-size: $heading-5-size;
-        line-height: $heading-5-lh;
+        @include mixins.h5-text;
         color: $white-color;
         margin-top: 12px;
+
+        @media (min-width:1400px) {
+            @include mixins.h2-text;
+        }
     }
 
     &__text {
-        font-family: $body-1-font;
-        font-size: $body-1-size;
-        line-height: $body-1-lh;
+        @include mixins.body-1-text;
         color: $grey-2-color;
         margin-top: 12px;
     }
@@ -103,9 +150,7 @@
     }
 
     &__checklist-item-text {
-        font-family: $body-3-font;
-        font-size: $body-3-size;
-        line-height: $body-3-lh;
+        @include mixins.body-3-text;
         color: $white-color;
     }
 }

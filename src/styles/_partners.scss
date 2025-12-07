@@ -11,6 +11,10 @@
         margin-top: 100px;
         @include mixins.caption-1-text;
         @include mixins.gradient-text;
+
+        @media (min-width:1400px) {
+            margin-top: 200px;
+        }
     }
 
     &__title {
@@ -18,25 +22,62 @@
         @include mixins.h5-text;
         color: $white-color;
         text-align: center;
+
+        @media (min-width:1400px) {
+            @include mixins.h2-text;
+        }
     }
 
     &__img {
+        overflow: hidden;
         position: relative;
-        margin-bottom: 100px;
+        padding-bottom: 160px;
+        margin-bottom: -160px;
+
+        @media (min-width:700px) {
+            padding-bottom: 190px;
+            margin-bottom: -190px;
+        }
+
+        @media (min-width:1000px) {
+            padding-bottom: 300px;
+            margin-bottom: -180px;
+        }
+
+        @media (min-width:1400px) {
+            margin-top: 58px;
+        }
     }
 
     &__img-light {
         position: absolute;
-        top: 90px;
-        right: 0;
+        top: 91px;
+        right: -28px;
         z-index: 3;
+
+        @media (min-width:1000px) {
+            top: 157px;
+        }
     }
 
     &__img-sircle {
         position: absolute;
-        bottom: -83px;
-        right: 123px;
+        width: 180px;
+        bottom: 82px;
+        right: 125px;
         z-index: 2;
+
+        @media (min-width:700px) {
+            width: 330px;
+            right: 220px;
+            bottom: 44px;
+        }
+
+        @media (min-width:1000px) {
+            width: 425px;
+            right: 299px;
+            bottom: 123px;
+        }
     }
 
     &__img-bg {
@@ -47,7 +88,25 @@
     &__img-man {
         position: absolute;
         z-index: 4;
-        top: 100px;
-        right: 71px;
+        width: 280px;
+        top: 102px;
+        right: 75px;
+
+        @media (min-width:700px) {
+            width: 500px;
+            top: 172px;
+            right: 135px;
+        }
+
+        @media (min-width:1000px) {
+            width: 670px;
+            top: 202px;
+            right: 178px;
+        }
+
+        @media (min-width:1400px) {
+            top: 216px;
+            right: 177px;
+        }
     }
 }

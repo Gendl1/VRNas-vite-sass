@@ -3,6 +3,25 @@
 
 .choose-us {
 
+    &__wrp {
+        @media (min-width:1000px) {
+            margin-top: 150px;
+            display: grid;
+            overflow: hidden;
+            gap: 50px;
+            margin-bottom: 50px;
+            grid-template-columns: auto auto;
+        }
+
+        @media (min-width:1400px) {
+            margin-top: 283px;
+            gap: 0;
+            grid-template-columns: 1fr 1fr;
+            padding-bottom: 100px;
+            margin-bottom: -100px;
+        }
+    }
+
     &__img {
         overflow: hidden;
         position: relative;
@@ -19,16 +38,34 @@
         margin-top: 100px;
         margin-bottom: 100px;
         z-index: 3;
+        @media (min-width:1000px) {
+            top: -103px;
+            margin-bottom: 0;
+        }
+
+        @media (min-width:1400px) {
+            width: 563px;
+        }
     }
 
     &__img-video {
         position: absolute;
-        bottom: 55px;
+        bottom: 49px;
         right: 70px;
         z-index: 4;
+        width:146px;
 
-        @media (min-width:450px) {
-            bottom: -46px;
+        @media (min-width:700px) {
+            bottom: -52px;
+        }
+
+        @media (min-width:1000px) {
+            bottom: 79px;
+        }
+
+        @media (min-width:1400px) {
+            bottom: -102px;
+            right: 0;
         }
     }
 
@@ -37,16 +74,35 @@
         top: 40px;
         right: -142px;
         z-index: 2;
+
+        @media (min-width:1000px) {
+            top: -24px;
+            right: -172px;
+        }
+
+        @media (min-width:1400px) {
+            top: 100px;
+        }
     }
 
     &__img-bg {
         position: absolute;
         z-index: 1;
-        top: 223px;
+        top: 237px;
         left: 50px;
+        width: 296px;
 
-        @media (min-width:450px) {
-            top: 123px;
+        @media (min-width:700px) {
+            top: 137px;
+        }
+
+        @media (min-width:1000px) {
+            top: 105px;
+        }
+
+        @media (min-width:1400px) {
+            top: 187px;
+            width: auto;
         }
     }
 
@@ -60,6 +116,10 @@
         margin-top: 12px;
         @include mixins.h5-text;
         color: $white-color;
+
+        @media (min-width:1400px) {
+            @include mixins.h2-text;
+        }
     }
 
     &__expandable {
@@ -87,4 +147,9 @@
         color: $grey-2-color;
         margin-top: 12px;
     }
+}
+
+@media (min-width: 1000px) {
+    .grid-choose-us-text  { order: 1; }
+    .grid-choose-us-img   { order: 2; }
 }

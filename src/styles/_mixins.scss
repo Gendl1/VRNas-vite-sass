@@ -78,6 +78,12 @@
     line-height: $body-1-lh;
 }
 
+@mixin body-1-1-text {
+    font-family: $caption-1-font;
+    font-size: $body-1-size;
+    line-height: $body-1-lh;
+}
+
 @mixin body-2-text {
     font-family: $body-2-font;
     font-size: $body-2-size;

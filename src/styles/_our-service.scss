@@ -2,27 +2,69 @@
 @use 'mixins' as mixins;
 
 .our-service {
+    &__wrp {
+        position: relative;
+        @media (min-width:1000px) {
+            display: flex;
+            gap: 80px;
+            margin-top: 150px;
+        }
 
-    &__caption {
+        @media (min-width:1400px) {
+            gap: 274px;
+        }
+    }
+
+    &__name {
+        @media (min-width:1000px) {
+            min-width: fit-content;
+        }
+    }
+
+    &__name-caption {
         margin-top: 100px;
         @include mixins.caption-1-text;
         text-transform: uppercase;
         @include mixins.gradient-text;
+
+        @media (min-width:1000px) {
+            margin-top: 0;
+        }
     }
 
-    &__title {
+    &__name-title {
         margin-top: 12px;
         @include mixins.h5-text;
         color: $white-color;
+
+        @media (min-width:1400px) {
+            @include mixins.h2-text;
+        }
     }
 
     &__text {
         margin-top: 12px;
         @include mixins.body-1-text;
         color: $grey-2-color;
+
+        @media (min-width:1000px) {
+            margin-top: 0;
+        }
+    }
+
+    &__light {
+        display: none;
+        position: absolute;
+        top: -270px;
+        right: -120px;
+        z-index: 1;
+        @media (min-width:1400px) {
+            display: block;
+        }
     }
 
     &__grid {
+        z-index: 2;
         margin-top: 24px;
         display: grid;
         grid-template-areas: 
@@ -33,12 +75,33 @@
         "events"
         "entertainment";
         gap: 32px;
+
+        @media (min-width:700px) {
+            margin-top: 46px;
+            grid-template-areas: 
+            "development design"
+            "games events"
+            "consulting entertainment";
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (min-width:1400px) {
+            grid-template-areas: 
+            "development design consulting"
+            "games events entertainment";
+        }
     }
 
     &__grid-item {
+        max-width: 398px;
+        box-sizing: border-box;
+        z-index: 2;
         padding: 38px 58px 25px 32px;
         background-color: $black-50-op60-color;
-        
+
+        @media (min-width:1400px) {
+            padding: 38px 39px 25px 32px;
+        }
     }
 
     &__grid-item-img {
@@ -60,24 +123,57 @@
 
 .grid-item-development {
     grid-area: development;
+
+    @media (min-width:1000px) {
+        justify-self: self-end;
+    }
 }
 
 .grid-item-design {
     grid-area: design;
+
+    @media (min-width:1400px) {
+        position: relative;
+        top: 57px;
+    }
 }
 
 .grid-item-consulting {
     grid-area: consulting;
+
+    @media (min-width:1400px) {
+        position: relative;
+        top: 135px;
+    }
+
+    @media (min-width:1000px) {
+        justify-self: self-end;
+    }
 }
 
 .grid-item-games {
     grid-area: games;
+
+    @media (min-width:1000px) {
+        justify-self: self-end;
+    }
 }
 
 .grid-item-events {
     grid-area: events;
+
+    @media (min-width:1400px) {
+        position: relative;
+        top: 55px;
+    }
+
 }
 
 .grid-item-entertainment {
     grid-area: entertainment;
+
+    @media (min-width:1400px) {
+        position: relative;
+        top:133px;
+    }
 }
