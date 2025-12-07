@@ -143,6 +143,7 @@
     }
 
     &__expandable-item-text {
+        display: none;
         @include mixins.body-3-text;
         color: $grey-2-color;
         margin-top: 12px;
@@ -152,4 +153,8 @@
 @media (min-width: 1000px) {
     .grid-choose-us-text  { order: 1; }
     .grid-choose-us-img   { order: 2; }
+}
+
+.open {
+    display: block;
 }
