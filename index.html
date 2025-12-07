@@ -706,11 +706,12 @@
 
     <script type="module" src="/src/main.js"></script>
 
+    <!-- Делигирование событий для expandable  -->
     <script>
       document.querySelector('.choose-us__expandable').addEventListener(
         'click', 
         function(e) {
-          // Проверка клика по div с заголовком
+          //Проверка клика по div с заголовком
           const title = e.target.closest('.choose-us__expandable-item-title');
           
           // Если клик не по заголовку — игнорируем
@@ -737,5 +738,14 @@
       )
     </script>
 
+    <!-- Бургер меню -->
+    <script>
+        document.querySelector('.header__burger').addEventListener(
+            'click', function() 
+            {
+            document.querySelector('.header__nav').classList.toggle('open2');
+            }
+        )
+    </script>
   </body>
 </html>

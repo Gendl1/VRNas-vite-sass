@@ -26,7 +26,7 @@
 
     &__burger {
         background-color: transparent;
-
+        padding: 0;
         @media (min-width:760px) {
             display: none;
         }
@@ -71,4 +71,8 @@
             display: block;
         }
     }
+}
+
+.open2 {
+    display: flex;
 }
