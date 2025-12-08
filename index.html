@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>vrnas</title>
   </head>
   <body>
@@ -26,7 +28,7 @@
         </a>
       </nav>
 
-      <div class="header__link">Contact us</div>
+      <a class="header__link" href="#">Contact us</a>
 
       <button class="header__burger">
         <img src="./public/images/header_burger.png">
@@ -512,14 +514,51 @@
         <img src="./public/images/articles_bg.svg" class="special-img">
       </div>
       <div class="our-articles__wrp">
-        <div class="our-articles__display">
-          <div class="our-articles__display-data">
-            <div class="our-articles__display-data-caption">VR Games</div>
-            <p class="our-articles__display-data-title">Entertainment Goes Virtual: The Rise of VR Gaming</p>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="our-articles__display">
+                <div class="our-articles__display-data">
+                  <div class="our-articles__display-data-caption">VR Games</div>
+                  <p class="our-articles__display-data-title">Entertainment Goes Virtual: The Rise of VR Gaming</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="our-articles__display">
+                <div class="our-articles__display-data">
+                  <div class="our-articles__display-data-caption">VR Games</div>
+                  <p class="our-articles__display-data-title">Entertainment Goes Virtual: The Rise of VR Gaming</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="our-articles__display">
+                <div class="our-articles__display-data">
+                  <div class="our-articles__display-data-caption">VR Games</div>
+                  <p class="our-articles__display-data-title">Entertainment Goes Virtual: The Rise of VR Gaming</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="our-articles__display">
+                <div class="our-articles__display-data">
+                  <div class="our-articles__display-data-caption">VR Games</div>
+                  <p class="our-articles__display-data-title">Entertainment Goes Virtual: The Rise of VR Gaming</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <button class="our-articles__display-button">
-              <img src="./public/images/articles_button.svg">
+
+          <div class="swiper-pagination"></div>
+
+          <button class="swiper-button-next our-articles__display-button">
+            <img src="./public/images/articles_button.svg">
           </button> 
+
         </div>
 
         <div class="our-articles__recent">
@@ -706,46 +745,22 @@
 
     <script type="module" src="/src/main.js"></script>
 
-    <!-- Делигирование событий для expandable  -->
     <script>
-      document.querySelector('.choose-us__expandable').addEventListener(
-        'click', 
-        function(e) {
-          //Проверка клика по div с заголовком
-          const title = e.target.closest('.choose-us__expandable-item-title');
-          
-          // Если клик не по заголовку — игнорируем
-          if (!title) return;
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
 
-          // Находим родительский элемент .choose-us__expandable-item
-          const item = title.parentElement;
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
 
-          // Находим текст и img внутри этого элемента
-          const text = item.querySelector('.choose-us__expandable-item-text');
-          const icon = item.querySelector('.choose-us__expandable-item-title-img img');
-
-          // Переключаем класс open 
-          text.classList.toggle('open');
-
-          // Меняем иконку в зависимости от состояния
-          if (text.classList.contains('open')) {
-            icon.src = './public/images/expand_open.svg';
-          } 
-          else {
-            icon.src = './public/images/expand_close.svg';
-          }
-        }
-      )
-    </script>
-
-    <!-- Бургер меню -->
-    <script>
-        document.querySelector('.header__burger').addEventListener(
-            'click', function() 
-            {
-            document.querySelector('.header__nav').classList.toggle('open2');
-            }
-        )
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+      },
+      });
     </script>
   </body>
 </html>
